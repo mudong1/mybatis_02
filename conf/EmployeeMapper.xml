@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+namespace：名称空间
+id：唯一标识
+resultType：返回值类型
+#{id}：从传递过来的参数中取出id值
+
+/* select * from tbl_employee where id = #{id}*/
+last_name lastName 因为数据库表为last_name，bean为lastName，
+所以查询时要起别名，否则报错
+-->
+
+<mapper namespace="com.atguigu.mybatis.EmployeeMapper">
+    <select id="selectEmp" resultType="com.atguigu.mybatis.bean.Employee">
+      select id,last_name lastName,email,gender from tbl_employee where id = #{id}
+    </select>
+</mapper>
