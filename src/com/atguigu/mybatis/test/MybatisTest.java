@@ -49,6 +49,7 @@ public class MybatisTest {
 //        mybatisTest.test00();
 //        mybatisTest.test();
 //        mybatisTest.test1();
+        System.out.println("hot_fix");
     }
 
     /**
