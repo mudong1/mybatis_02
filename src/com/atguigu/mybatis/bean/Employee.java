@@ -4,7 +4,7 @@ package com.atguigu.mybatis.bean;
  * @author lhd
  */
 public class Employee {
-    private Integer id; //
+    private Integer id; //这是id
     private String lastName; //
     private String email; //
     private String gender; //
